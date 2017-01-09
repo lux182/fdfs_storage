@@ -16,7 +16,7 @@ RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN groupadd nginx && \
     useradd -g nginx nginx -s /bin/false
 
-RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-6.noarch.rpm && \
+RUN wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm && \
     rpm -ivh epel-release-7-6.noarch.rpm && \
     rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
 
